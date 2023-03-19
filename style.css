@@ -72,6 +72,25 @@ body {
   margin-left: -50%;
   margin-top: -10%;
 }
+
+@media only screen and (max-width: 920px) {
+
+  #logo {
+
+    margin-top: -60%;
+  }
+
+  body {
+
+    margin-left: 0;
+  }
+
+  #form-container {
+
+    margin-bottom: 0%;
+    position: relative;
+  }
+}
   
 video {
 
