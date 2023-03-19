@@ -30,6 +30,7 @@ attendButton.addEventListener('click', () => {
 
 $(document).ready(function() {
   $('form').submit(function(e) {
+
     e.preventDefault();
     $.ajax({
       url: $(this).attr('action'),
@@ -37,9 +38,6 @@ $(document).ready(function() {
       data: $(this).serialize(),
       dataType: 'json',
       success: function() {
-        // Hide the input field and attend button
-        $('#input-field').hide();
-        $('#attend-button').hide();
         
         // Show the message box and presave button
         $('#message-box').show();
